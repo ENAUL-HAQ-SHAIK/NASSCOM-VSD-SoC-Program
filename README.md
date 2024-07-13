@@ -17,3 +17,6 @@ Later
 5. Then all LEF files will be merged.
 
 ![image](https://github.com/user-attachments/assets/f9425128-9657-4d5a-9f78-24d1d84f154b)
+
+
+> **Once the design is selected for synthesis**
