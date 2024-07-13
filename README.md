@@ -20,3 +20,5 @@ Later
 
 
 > **Once the design is selected for synthesis**
+> 
+> runs folder is created in the design directory in which after the synthesis the reports, results and other design parameters will be loaded
