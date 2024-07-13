@@ -1,4 +1,6 @@
-![image](https://github.com/user-attachments/assets/839cbad2-ca56-45a4-85b9-9b8e6352b6d5)Initially, various files in different folders come under *openlane* has been observed as shown below
+
+Initially, various files in different folders come under *openlane* has been observed as shown below
+
 ![image](https://github.com/user-attachments/assets/a3307be2-3606-4ca7-9b2c-84f19dd15ce8)
 
 Later
@@ -30,6 +32,28 @@ Later
 > In bash prompt, give the command **<run_synthesis>**, then synthesis will be done on the design if errors are not observed.
 >
 > ![image](https://github.com/user-attachments/assets/87281901-efc6-47e7-9a3c-3908510061e2)
+>
+> The number of D-flip flops observed in the synthesis report is shown below which conveys that there is 10.48% of flops available in the total number of cells.
+>
+> ![image](https://github.com/user-attachments/assets/b2ba4ff2-333d-4fd9-84af-76b86b87d90c)
+>
+> Synthesis process also provides reports over timing, no. of cells etc, on among which is shown below:
+>
+> ![image](https://github.com/user-attachments/assets/032c8a18-4ac2-4bef-a08f-a38dedea63d6)
+>
+> Netlist is generated upon the command given
+> ![image](https://github.com/user-attachments/assets/a9576002-e4ff-44e4-8212-7d592ae4216a)
+>
+> Report over the STA analysis is generated upon the respective commands:
+>
+>![image](https://github.com/user-attachments/assets/75b94631-74c7-432d-9469-ae0e0c21eccb)
+>
+> ![image](https://github.com/user-attachments/assets/6b650d74-2cf0-4b58-beb9-b7a78ab3c4cd)
+
+
+
+
+
 
 
 
