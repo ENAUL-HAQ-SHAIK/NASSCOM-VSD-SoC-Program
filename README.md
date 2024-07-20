@@ -1,4 +1,5 @@
 **Day 1: Introduction to Openlane and Synthesizing the Picorv32A**
+
 Initially, various files in different folders come under *openlane* has been observed as shown below
 
 ![image](https://github.com/user-attachments/assets/a3307be2-3606-4ca7-9b2c-84f19dd15ce8)
