@@ -105,7 +105,64 @@ Later
 > ![image](https://github.com/user-attachments/assets/d74a6c42-fe4f-4895-bccd-10c2a2ae8b66)
 >
 > ![image](https://github.com/user-attachments/assets/dd1c57e9-320b-4aa8-94eb-dd0db0829b02)
-> 
+>
+**DAY 3: Cloning:** It is a process in layout with which a custom layout instance can be included in the existing layout with standard cells. 
+> An inverter from the link https://github.com/nickson-jose/vsdstdcelldesign.git using git clone command clones it with picorv32A design. It creates vsdstdcelldesign folder in openlane directory with all the related lib files
+>
+> ![image](https://github.com/user-attachments/assets/21f4d886-c8db-49ca-907a-af8593c2a69a)
+>
+> Copying sky130A.tech technology library into vsdstdcelldesign folder
+>
+> ![image](https://github.com/user-attachments/assets/cb5379ca-b5f9-4ccd-9971-dbbe9b9075d1)
+>
+> ![image](https://github.com/user-attachments/assets/1cb1c0eb-d77a-4151-803f-cd0682127478)
+> Sky130A.tech file can be observed vsdstdcelldesign folder
+>
+> Using the magic tools, the layout of the custom inverter from vsdstdcelldesign folder can be opened as follows:
+>
+> ![image](https://github.com/user-attachments/assets/31396c97-2a62-43b9-b0a2-b2108c6b5d6a)
+>
+> Inverter's spice file can be opened to edit using vim command
+>
+> ![image](https://github.com/user-attachments/assets/b2431d83-0b6e-4066-a474-b0189ee64d24)
+>
+> Spice file opened is given below:
+>
+> ![image](https://github.com/user-attachments/assets/0c728565-5281-40af-b36a-4579fe32633c)
+> In the above file, many changes have been done and observed the error to be addressed
+>
+> Simulation of the custom inverter is done using ngspice tool
+>
+> ![image](https://github.com/user-attachments/assets/9ac2211e-d29e-4ef2-857a-eace52a61da3)
+>
+> From the simulation results, rise time, fall time and propagation delay is calculated
+>
+> ![image](https://github.com/user-attachments/assets/aee550d1-f224-4d8c-bf83-ee14215ad311)
+> Rise time is from 20% to 80% of the peak voltage of logic '0' to '1' of the output transition. It is observed that it's value is 2.206 - 2.163 = 0.043 ns
+>
+> Simularly, for fall time, it is from 80% to 20% of the peak voltage of logic '1' to '0' of the output transition. It is observed that it's value is 4.0689 - 4.0407 = 0.028 ns
+>![image](https://github.com/user-attachments/assets/7c800c8a-5852-4fde-86a9-10d0749fb166)
+> Always rise ime is larger than fall time
+>
+> Propagation Delay of the inverter can be obtained by findinf the values of Tplh and Tphl. Tplh is the component which defines the delay between output transition from '0' to '1' and input transition while it is vice versa for Tphl. In both the cases, 50% of the transistion is to be taken
+>
+> ![image](https://github.com/user-attachments/assets/77e6ba92-23ba-4525-829d-7ecb9275a13a)
+>
+> From the above values, Tplh is 0.03 ns and Tphl is 0.004 ns. If the difference between both of the components is small then its average is the propagation delay else, it is the maximum value. In our case it is 0.03 ns
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
