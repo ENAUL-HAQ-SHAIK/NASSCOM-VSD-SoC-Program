@@ -66,6 +66,11 @@ Later
 > 
 
 **DAY2: Floorplan and Placement**
+**Chip Floorplanning** partitions the chip die between different system building blocks and place I/O pads. Dimensions of every cell, pin location and row locations are defined by **Macro Floor Planning.**
+To perform Floorplan, you need to make sure that synthesis is over. Then, by using the command <run_synthesis>, one can perform it. The floorplan process is shown below
+
+
+
 
 
 
