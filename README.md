@@ -63,6 +63,11 @@ Later
 >![image](https://github.com/user-attachments/assets/75b94631-74c7-432d-9469-ae0e0c21eccb)
 >
 > ![image](https://github.com/user-attachments/assets/6b650d74-2cf0-4b58-beb9-b7a78ab3c4cd)
+> 
+
+**DAY2: Floorplan and Placement**
+
+
 
 
 
