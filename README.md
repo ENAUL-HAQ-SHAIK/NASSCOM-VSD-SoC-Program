@@ -1,3 +1,16 @@
+  This SoC Design Program is organised by VLSI System Design with Hands-on Practice over open-source platform OPENLANE. It has 5 days of hands-on practice from RTL to GDSII generation.
+
+**Openlane** is an innovative silicon implementation platform which supports open-source tools such as Yosys, OpenROAD, Magic, KLayout. OpenLane integrates and abstracts the various steps of silicon implementation, allowing users to harden their projects using simple configuration files
+Currently, there are two versions of OpenLane, each tailored to its own use case.
+**OpenLane 1:** Tried-and-True Open-Source Silicon Implementation Flow
+**OpenLane 2:** Next-Generation Silicon Implementation Platform for Highly-Custom Chips  [Reference:https://efabless.com/openlane]
+
+**Helpful Links:**
+Check it out on GitHub! https://github.com/efabless/openlane2
+Reference Manual: https://openlane2.readthedocs.io/en/latest/reference/index.html
+Additional Material: https://openlane2.readthedocs.io/en/latest/additional_material.html
+
+
 **Day 1: Introduction to Openlane and Synthesizing the Picorv32A**
 
 Initially, various files in different folders come under *openlane* has been observed as shown below
