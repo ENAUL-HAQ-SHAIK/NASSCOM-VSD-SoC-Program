@@ -188,6 +188,7 @@ Additional Material: https://openlane2.readthedocs.io/en/latest/additional_mater
 >                                                           <tap_decap_or>
 >  To do placement, <run_placement> is used which provides result as below:
 > ![image](https://github.com/user-attachments/assets/739524e4-01c1-4063-a087-f18689fcf07c)
+> ![image](https://github.com/user-attachments/assets/dcbd64fc-0501-40c9-a06c-c7ab3ad4ec0f)
 
 > To check whether the custon cell i.e., vsdinv inverter is available in the layout using magic tool. The below images show the commands given, layout and clear picture of vsdinv inverter
 > ![image](https://github.com/user-attachments/assets/01e1eebd-cb22-45bf-ad51-8c0d55a23939)
@@ -196,6 +197,36 @@ Additional Material: https://openlane2.readthedocs.io/en/latest/additional_mater
 
 > Once, the cell is selected, it can be observed that the vsdinv inverter cell is connected with power rails of adjacent std. cells
 > ![image](https://github.com/user-attachments/assets/cef4d39b-c250-4f48-9bce-f1ed9cc14c64)
+>
+> For the Static Timing Analysis (STA), Pre-STA configuration file is to be created using <vim> command which is shown below. pre-sta.config file consists of information about the parameters to be observes like time, capacitance, resistance, also reading out the lib files
+> ![image](https://github.com/user-attachments/assets/4d0777df-611b-4433-8c04-9f123f03fb84)
+>
+> The parameters that are not covered by .config file is mentioned in another file my_base.sdc. Latter, the base.sdc file in pre-sta.config is replaced with my_base.sdc.
+> ![image](https://github.com/user-attachments/assets/b8f6c583-fc32-4a75-9a00-4ecd59149ef8)
+>
+> For STA analysis, need to check any negative slack is available. If it is there, thenby adjustinf the loads of the cells in the pre-sta.config file slack is to be reduced. To do this <sta pre-sta.config> command is used. The below figures show the initail slack and the optimized slack. To optimize the slack the following command need to be used
+>        <replace_cell_cell-no_ _cell-name_>
+         < report_checks -fields {net cap slew input_pins} -digits 4>
+> ![image](https://github.com/user-attachments/assets/0466e708-f624-4592-8246-18c1cb4272be)
+> ![image](https://github.com/user-attachments/assets/55f2f44c-4d14-4553-bc87-d59b3136b48c)
+>
+> Later, these are to be updated in the picorv32a.synthesis.v file
+> ![image](https://github.com/user-attachments/assets/2791558c-c62e-448a-aeae-212533db3bf6)
+>
+> Later, complete floorplan and placement as shown below
+>![image](https://github.com/user-attachments/assets/a0a3edfc-cc06-47bc-b3bc-b663da2cf02a)
+> ![image](https://github.com/user-attachments/assets/1ec60d6e-667e-403a-920f-424924882f83)
+> ![image](https://github.com/user-attachments/assets/d29858cb-e089-425c-9f07-c8501be06392)
+> 
+
+
+ 
+
+
+
+
+
+
 >
 >  
 
