@@ -155,6 +155,18 @@ Later
 > ![image](https://github.com/user-attachments/assets/77e6ba92-23ba-4525-829d-7ecb9275a13a)
 >
 > From the above values, Tplh is 0.03 ns and Tphl is 0.004 ns. If the difference between both of the components is small then its average is the propagation delay else, it is the maximum value. In our case it is 0.03 ns
+>
+> 
+**DAY 4: Pre-Layout Timing Analysis after Cloning:**
+
+>    In this lab, design flow from synthesis to pre-layout processes are done step by step which include floorplan, placement with STA analysis
+
+> Initially, LEF file of custon std. cell is copied into picorv32a design using the <cp> command
+>
+> **LEF** file is also called **Library Exchange Format** file, has basically two parts **technology lef** and **cell lef file**.
+> **Technology lef** contains information about the metal layers and vias and design rules whereas **cell lef file** contains an abstract view of the layout of standard cells.
+
+
 
 
 
