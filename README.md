@@ -13,26 +13,25 @@ Additional Material: https://openlane2.readthedocs.io/en/latest/additional_mater
 
 **Day 1: Introduction to Openlane and Synthesizing the Picorv32A**
 
-Initially, various files in different folders come under *openlane* has been observed as shown below
+> Initially, various files in different folders come under *openlane* has been observed as shown below
+> > ![image](https://github.com/user-attachments/assets/a3307be2-3606-4ca7-9b2c-84f19dd15ce8)
 
-![image](https://github.com/user-attachments/assets/a3307be2-3606-4ca7-9b2c-84f19dd15ce8)
-
-Later
-1. To open OPENLANE, docker command can be used which responds with bash-4.2
-
-
-2. Enter into interactive mode of operation a command **<./flow.tcl -interactive>**
+> Later
+>   1. To open OPENLANE, docker command can be used which responds with bash-4.2
 
 
-3. Further, the required version of openlane to be defined which is openlane 0.9 using command **<package require openlane 0.9>**
+>   2. Enter into interactive mode of operation a command **<./flow.tcl -interactive>**
 
 
-4. Select the design using command **<prep -design picorv32a>**, design folder.
+>   3. Further, the required version of openlane to be defined which is openlane 0.9 using command **<package require openlane 0.9>**
 
 
-5. Then all LEF files will be merged.
+>   4. Select the design using command **<prep -design picorv32a>**, design folder.
 
-![image](https://github.com/user-attachments/assets/f9425128-9657-4d5a-9f78-24d1d84f154b)
+
+>   5. Then all LEF files will be merged.
+
+> ![image](https://github.com/user-attachments/assets/f9425128-9657-4d5a-9f78-24d1d84f154b)
 
 
 > **Once the design is selected for synthesis**
@@ -65,7 +64,7 @@ Later
 > ![image](https://github.com/user-attachments/assets/6b650d74-2cf0-4b58-beb9-b7a78ab3c4cd)
 > 
 
-> **DAY2: Floorplan and Placement:**
+**DAY2: Floorplan and Placement:**
 > 
 > **Chip Floorplanning** partitions the chip die between different system building blocks and place I/O pads. Dimensions of every cell, pin location and row locations are defined by **Macro Floor Planning.**
 > To perform Floorplan, you need to make sure that synthesis is over. Then, by using the command <run_synthesis>, one can perform it. The floorplan process is shown below:
@@ -162,9 +161,54 @@ Later
 >    In this lab, design flow from synthesis to pre-layout processes are done step by step which include floorplan, placement with STA analysis
 
 > Initially, LEF file of custon std. cell is copied into picorv32a design using the <cp> command
->
-> **LEF** file is also called **Library Exchange Format** file, has basically two parts **technology lef** and **cell lef file**.
+>**LEF** file is also called **Library Exchange Format** file, has basically two parts **technology lef** and **cell lef file**.
 > **Technology lef** contains information about the metal layers and vias and design rules whereas **cell lef file** contains an abstract view of the layout of standard cells.
+>
+> ![image](https://github.com/user-attachments/assets/9e133cf5-b366-4c26-bf1c-48d3ef74e28e)
+>
+> After that command, LEF file can be observed in the src folder of picorv32a as shown below
+>
+> ![image](https://github.com/user-attachments/assets/d7f4fdff-8df3-4a1d-8fcb-d23442015f58)
+>
+> Later, all the library files are copied from vsdstdcelldesign folder into picorv32a
+>
+> ![image](https://github.com/user-attachments/assets/d0ed5bf3-c2f7-4fb9-9165-c89aaebb25ca)
+>
+> ![image](https://github.com/user-attachments/assets/4972a484-2265-4797-9497-df0d93c906de)
+>
+> Synthesis is done by using <run_synthesis> command
+>
+> ![image](https://github.com/user-attachments/assets/3c437e4a-b9bb-44c5-9235-028c34cb2f35)
+>
+> After the synthesis, custom std. cell vsd inverter is observed in the cell description
+> ![image](https://github.com/user-attachments/assets/7d51bdcf-9715-4277-a507-66dd275974de)
+> 
+> Then floorplan has been done using the following commands <init_floorplan> 
+>                                                           <place_io>
+>                                                           <tap_decap_or>
+>  To do placement, <run_placement> is used which provides result as below:
+> ![image](https://github.com/user-attachments/assets/739524e4-01c1-4063-a087-f18689fcf07c)
+
+> To check whether the custon cell i.e., vsdinv inverter is available in the layout using magic tool. The below images show the commands given, layout and clear picture of vsdinv inverter
+> ![image](https://github.com/user-attachments/assets/01e1eebd-cb22-45bf-ad51-8c0d55a23939)
+> ![image](https://github.com/user-attachments/assets/0e0bbdd0-0518-42f4-a5b3-dd4e00c90391)
+> ![image](https://github.com/user-attachments/assets/c7c7119d-af0c-4f51-a8e4-c9fe24c64404)
+
+> Once, the cell is selected, it can be observed that the vsdinv inverter cell is connected with power rails of adjacent std. cells
+> ![image](https://github.com/user-attachments/assets/cef4d39b-c250-4f48-9bce-f1ed9cc14c64)
+>
+>  
+
+
+ 
+
+
+
+
+
+
+
+
 
 
 
