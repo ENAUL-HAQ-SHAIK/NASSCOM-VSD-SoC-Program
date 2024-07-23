@@ -1,4 +1,4 @@
-  **This SoC Design Program is organised by VLSI System Design with Hands-on Practice over open-source platform OPENLANE. It has 5 days of hands-on practice from RTL to GDSII generation.**
+![image](https://github.com/user-attachments/assets/1f5fb0ed-8bd7-4194-bd6c-137f316761da)  **This SoC Design Program is organised by VLSI System Design with Hands-on Practice over open-source platform OPENLANE. It has 5 days of hands-on practice from RTL to GDSII generation.**
 
 **Openlane** is an innovative silicon implementation platform which supports open-source tools such as Yosys, OpenROAD, Magic, KLayout. OpenLane integrates and abstracts the various steps of silicon implementation, allowing users to harden their projects using simple configuration files
 Currently, there are two versions of OpenLane, each tailored to its own use case.
@@ -233,6 +233,33 @@ Additional Material: https://openlane2.readthedocs.io/en/latest/additional_mater
 > ![image](https://github.com/user-attachments/assets/51bd6a9a-4d54-4c57-8204-6c94b8068506)
 >
 > PDN Generation is successful
+> ![image](https://github.com/user-attachments/assets/1d7d8618-33f1-4393-af22-b5713e3471e7)
+>
+> After PDN is successful, routing is done by using <run_routing> command
+> ![image](https://github.com/user-attachments/assets/04fed4e7-e7f5-40fd-828d-f0ca8f340e07)
+>
+> It is observed from the routing results is that the no. of violations are 0. Also, once the routing is successful SPEF Extraction is also over
+> ![image](https://github.com/user-attachments/assets/75bd211a-3587-4291-afec-61bee2b9896e)
+> ![image](https://github.com/user-attachments/assets/34865244-807e-4146-a2b3-7784bf964eb5)
+>
+> **routing.tcl file**
+> ![image](https://github.com/user-attachments/assets/3f3b1c61-aba4-4a80-8a97-cb64239bf05c)
+>
+> Finally, the layout is generated using magic tool as follows
+> ![image](https://github.com/user-attachments/assets/d64a3910-b824-477c-b242-4e86e212b89c)
+> ![image](https://github.com/user-attachments/assets/05da41ac-0416-4449-8c51-98ffa123ee88)
+> >
+> Standard cells inside the layout
+> ![image](https://github.com/user-attachments/assets/da5e9633-1b59-4c1b-9a76-6e555640bf5b)
+
+
+
+
+
+> 
+
+
+
 > 
 > 
 
