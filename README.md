@@ -217,7 +217,31 @@ Additional Material: https://openlane2.readthedocs.io/en/latest/additional_mater
 >![image](https://github.com/user-attachments/assets/a0a3edfc-cc06-47bc-b3bc-b663da2cf02a)
 > ![image](https://github.com/user-attachments/assets/1ec60d6e-667e-403a-920f-424924882f83)
 > ![image](https://github.com/user-attachments/assets/d29858cb-e089-425c-9f07-c8501be06392)
+>
+> After the completion of placement, clock Tree Synthesis is done using <run_cts> wherein positive slack is observed.
+> ![image](https://github.com/user-attachments/assets/5fd0939f-94cc-48a1-92a3-66e796c4d907)
+> ![image](https://github.com/user-attachments/assets/7a38af9a-c7c7-4bb4-9170-6e48ceaeb81d)
+> ![image](https://github.com/user-attachments/assets/955223ea-7cea-4c6e-b932-d92950a0953f)
 > 
+> cts.tcl file is given below with different optimized paramenters
+> ![image](https://github.com/user-attachments/assets/25151daa-2dbe-4865-9977-ad4525ea477b)
+>
+> 
+**DAY 5: Routing Process**
+> In order to do routing, initially power distribution has to be done between the cells. For that <gen_pdn> is to be used. Before that, all the changes which are being done to be included in the base folder
+> ![image](https://github.com/user-attachments/assets/88eb6152-ddf3-42a1-bdc4-de3bb2a4a967)
+> ![image](https://github.com/user-attachments/assets/51bd6a9a-4d54-4c57-8204-6c94b8068506)
+>
+> PDN Generation is successful
+> 
+> 
+
+> 
+
+
+
+> 
+
 
 
  
