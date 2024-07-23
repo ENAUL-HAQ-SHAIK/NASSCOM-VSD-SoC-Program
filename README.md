@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/1f5fb0ed-8bd7-4194-bd6c-137f316761da)  **This SoC Design Program is organised by VLSI System Design with Hands-on Practice over open-source platform OPENLANE. It has 5 days of hands-on practice from RTL to GDSII generation.**
+**This SoC Design Program is organised by VLSI System Design with Hands-on Practice over open-source platform OPENLANE. It has 5 days of hands-on practice from RTL to GDSII generation.**
 
 **Openlane** is an innovative silicon implementation platform which supports open-source tools such as Yosys, OpenROAD, Magic, KLayout. OpenLane integrates and abstracts the various steps of silicon implementation, allowing users to harden their projects using simple configuration files
 Currently, there are two versions of OpenLane, each tailored to its own use case.
@@ -240,8 +240,8 @@ Additional Material: https://openlane2.readthedocs.io/en/latest/additional_mater
 >
 > It is observed from the routing results is that the no. of violations are 0. Also, once the routing is successful SPEF Extraction is also over
 > ![image](https://github.com/user-attachments/assets/75bd211a-3587-4291-afec-61bee2b9896e)
-> ![image](https://github.com/user-attachments/assets/34865244-807e-4146-a2b3-7784bf964eb5)
->
+> ![image](https://github.com/user-attachments/assets/eb95b41a-4de3-4e04-b2b3-99b7b8fb916d)
+> >
 > **routing.tcl file**
 > ![image](https://github.com/user-attachments/assets/3f3b1c61-aba4-4a80-8a97-cb64239bf05c)
 >
